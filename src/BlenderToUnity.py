@@ -103,5 +103,5 @@ def unregister():
         bpy.utils.unregister_class(cls)
     bpy.types.VIEW3D_MT_object_context_menu.remove(NMND_MT_DRAW_MENU)
 
-#if __name__ == "__main__":
-#    register()
+if __name__ == "__main__":
+    register()
