@@ -1,6 +1,5 @@
 # BlenderToUnity
-This blender addon applies axis compensation to nested meshes and hierarchies for export to Unity, making sure all transforms are zeroed out.
-It's meant for static meshes, not animated objects or armatures.
+This blender addon applies axis compensation to nested meshes and hierarchies for export to Unity, resulting in clean gameobject transform.rotation properties. 
 
 ![Screenshot](/Documentation/header.png)
 
