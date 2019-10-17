@@ -1,6 +1,8 @@
 # Blender To Unity
 This blender addon applies axis compensation to nested meshes and hierarchies for export to Unity, resulting in clean gameobject transform.rotation properties. 
 
+Download the zip from [releases](/releases), install using addon manager as usual. 
+
 ![Screenshot](/Documentation/header.png)
 
 The addon adds two buttons to the Object context menu (right click in 3D view):
