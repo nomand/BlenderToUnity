@@ -3,7 +3,7 @@ import bpy
 bl_info = {
  "name": "Blender to Unity",
  "author": "nomand",
- "version": (1, 0, 0),
+ "version": (1, 0, 1),
  "blender": (2, 80, 0),
  "location": "3D View > Object Context menu",
  "description": "Prepares object hierarchy for export to Unity",
@@ -65,10 +65,10 @@ class NMND_FIX_HIERARCHY(bpy.types.Operator):
         Object.select_set(state=True)
         
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False, properties=False)
-        bpy.ops.transform.rotate(value = 1.5708, orient_axis='X', constraint_axis = (True, False, False), orient_type='GLOBAL')
+        bpy.ops.transform.rotate(value = -1.5708, orient_axis='X', constraint_axis = (True, False, False), orient_type='GLOBAL')
         
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False, properties=False)
-        bpy.ops.transform.rotate(value = -1.5708, orient_axis='X', constraint_axis = (True, False, False), orient_type='GLOBAL')
+        bpy.ops.transform.rotate(value = 1.5708, orient_axis='X', constraint_axis = (True, False, False), orient_type='GLOBAL')
         
         Object.select_set(state=False)
         
